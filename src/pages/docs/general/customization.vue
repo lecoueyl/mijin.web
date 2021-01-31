@@ -35,12 +35,12 @@ module.exports = {
   ],
   theme: {
     extend: {
-      // overide a component border-radius
+      // override a component border-radius
       borderRadius: {
         button: borderRadius.sm,
         form: borderRadius.sm,
       },
-      // overide a color
+      // override a color
       colors: {
         primary: colors.pink,
       },

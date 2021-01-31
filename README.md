@@ -46,5 +46,5 @@ npm run link:mijin
 3. Remove the NPM link before releasing the changes
 
 ```bash
-link:remove:mijin
+npm run link:remove:mijin
 ```

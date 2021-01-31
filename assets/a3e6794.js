@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[0],{100:function(e,o,n){"use strict";e.exports={locales:[{code:"en",iso:"en-US",name:"EN",file:"en.ts"}],defaultLocale:"en",seo:!0,lazy:!0,detectBrowserLanguage:{cookieKey:"redirected",useCookie:!0},langDir:"locales/",parsePages:!1,vueI18n:{fallbackLocale:"en"}}}}]);

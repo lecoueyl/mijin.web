@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/docs/atoms/toast", {data:[{}],fetch:[],mutations:void 0});

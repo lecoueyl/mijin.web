@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/docs/foundations/layout", {data:[{}],fetch:[],mutations:void 0});

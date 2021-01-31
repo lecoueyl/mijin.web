@@ -8,6 +8,10 @@ export default {
   */
   target: 'static',
   // ssr: false,
+  router: {
+    // github page support
+    base: '/mijin.web/',
+  },
   publicRuntimeConfig: {
     links: {
       github: process.env.LINKS_GITHUB || 'https://github.com/lecoueyl/mijin',
@@ -134,7 +138,7 @@ export default {
   ** Sitemap
   */
   sitemap: {
-    hostname: process.env.APP_URL || 'https://github.com/lecoueyl',
+    hostname: process.env.APP_URL || 'https://lecoueyl.github.io/mijin.web',
     gzip: true,
     i18n: i18n.defaultLocale,
   },

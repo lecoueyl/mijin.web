@@ -7,7 +7,7 @@ export default {
   ** See https://nuxtjs.org/api/configuration-target
   */
   target: 'static',
-  // ssr: false,
+  ssr: process.env.NODE_ENV === 'production',
   router: {
     // github page support
     base: '/mijin.web/',

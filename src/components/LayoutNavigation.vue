@@ -2,7 +2,7 @@
   <aside>
     <div class="fixed bottom-8 right-4 md:hidden z-50">
       <button
-        class="bg-primary-500 text-primary-100 hover:bg-primary-600 rounded-full p-4 inline-flex items-center shadow-xl
+        class="bg-primary-500 text-primary-100 hover:bg-primary-600 rounded-full p-4 inline-flex items-center shadow-lg
           transition-colors duration-200 ease-in-out focus:outline-none overflow-hidden"
         @click="isNavOpen = !isNavOpen"
       >

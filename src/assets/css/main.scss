@@ -1,5 +1,56 @@
 @import './highlight.js';
-@import url('https://fonts.googleapis.com/css2?family=Inter:slnt,wght@-10..0,100..900&family=IBM+Plex+Mono:wght@400;700&display=swap');
+
+/* inter-400 - latin */
+@font-face {
+  font-weight: 400;
+  font-family: 'Inter';
+  font-style: normal;
+  font-display: swap;
+  src:
+    url('~assets/font/inter-v3-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+    url('~assets/font/inter-v3-latin-regular.woff') format('woff'), /* Modern Browsers */
+    url('~assets/font/inter-v3-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('~assets/font/inter-v3-latin-regular.svg#Inter') format('svg'); /* Legacy iOS */
+}
+
+/* inter-500 - latin */
+@font-face {
+  font-weight: 500;
+  font-family: 'Inter';
+  font-style: 500;
+  font-display: swap;
+  src:
+    url('~assets/font/inter-v3-latin-500.woff2') format('woff2'), /* Super Modern Browsers */
+    url('~assets/font/inter-v3-latin-500.woff') format('woff'), /* Modern Browsers */
+    url('~assets/font/inter-v3-latin-500.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('~assets/font/inter-v3-latin-500.svg#Inter') format('svg'); /* Legacy iOS */
+}
+
+/* ibm-plex-mono-400 - latin */
+@font-face {
+  font-weight: 400;
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-display: swap;
+  src:
+    url('~assets/font/ibm-plex-mono-v6-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+    url('~assets/font/ibm-plex-mono-v6-latin-regular.woff') format('woff'), /* Modern Browsers */
+    url('~assets/font/ibm-plex-mono-v6-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('~assets/font/ibm-plex-mono-v6-latin-regular.svg#IBMPlexMono') format('svg'); /* Legacy iOS */
+}
+
+/* ibm-plex-mono-700 - latin */
+@font-face {
+  font-weight: 700;
+  font-family: 'IBM Plex Mono';
+  font-style: 700;
+  font-display: swap;
+  src:
+    url('~assets/font/ibm-plex-mono-v6-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+    url('~assets/font/ibm-plex-mono-v6-latin-700.woff') format('woff'), /* Modern Browsers */
+    url('~assets/font/ibm-plex-mono-v6-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('~assets/font/ibm-plex-mono-v6-latin-700.svg#IBMPlexMono') format('svg'); /* Legacy iOS */
+}
 
 html {
   @apply antialiased;

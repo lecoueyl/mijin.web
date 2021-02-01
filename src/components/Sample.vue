@@ -56,7 +56,7 @@
               v-clipboard:copy="code"
               v-clipboard:success="onCopy"
               v-clipboard:error="onError"
-              class="absolute top-0 right-0 opacity-0 group-hover:opacity-100 transition-opacity duration-100 ease-in-out"
+              class="absolute top-0 right-0 opacity-0 group-hover:opacity-100 transition-opacity duration-100 ease-in-out inline-flex items-center"
             >
               <MjIcon
                 name="copy"

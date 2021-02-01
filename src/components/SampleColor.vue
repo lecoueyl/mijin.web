@@ -19,7 +19,7 @@
         v-clipboard:copy="`${name}-${variation}`"
         v-clipboard:success="onCopy"
         v-clipboard:error="onError"
-        class="absolute top-0 right-0 bottom-0 mr-3 opacity-0 group-hover:opacity-100 transition-opacity duration-100 ease-in-out focus:outline-none"
+        class="absolute top-0 right-0 bottom-0 mr-3 opacity-0 group-hover:opacity-100 transition-opacity duration-100 ease-in-out focus:outline-none inline-flex items-center"
       >
         <MjIcon
           name="copy"

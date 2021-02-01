@@ -16,6 +16,7 @@
         </template>
       </i18n>
     </p>
+
     <MjInput
       v-model="filterQuery"
       type="search"

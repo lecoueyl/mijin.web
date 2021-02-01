@@ -21,7 +21,7 @@ export default Vue.extend({
   head() {
     return {
       link: [
-        { rel: 'canonical', href: this.$route.path },
+        { rel: 'canonical', href: `${this.$config.app.url}${this.$route.path}` },
       ],
     };
   },

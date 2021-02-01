@@ -10,7 +10,7 @@ module.exports = {
   defaultLocale: 'en',
   seo: true,
   lazy: true,
-  // baseUrl: process.env.APP_URL,
+  baseUrl: process.env.APP_URL || 'https://lecoueyl.github.io/mijin.web',
   detectBrowserLanguage: {
     cookieKey: 'redirected',
     useCookie: true,

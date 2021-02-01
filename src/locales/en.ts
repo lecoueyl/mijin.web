@@ -98,6 +98,8 @@ module.exports = {
         title: 'Customization',
         description: 'Mijin offers minimal customizations to focus on usability. Yet, the default theme setting can be overridden to give a specific aspect to the UI.',
         tailwindOverride: 'Mijin comes with it\'s Tailwind CSS presets. These presets can be override from your {tailwindConfigFile} file:',
+        overrideComponent: 'override a component border-radius',
+        overrideColor: 'override a color',
         defaultPresets: 'Default Mijin presets',
         pluginOption: 'The plugin can be initialized with options. For example, to change the default prefix from {fromMj} to {toM}, load the plugin with the following option',
         pluginOptions: {

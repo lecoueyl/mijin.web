@@ -67,12 +67,12 @@ module.exports = {
 import Mijin from 'mijin'
 
 Vue.use(Mijin)`,
-        nuxt: `// add plugins/mijin.js
+        nuxt: `// plugins/mijin.js
 import Vue from 'vue';
 
 Vue.use(Mijin)
 
-// in nuxt.config.js
+// nuxt.config.js
 export default {
   ...
   plugins: [

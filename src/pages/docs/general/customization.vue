@@ -52,7 +52,7 @@ module.exports = {
 
     <MjHeadline
       :id="$t('common.presets')"
-      :level="4"
+      :level="3"
       :size="4"
       class="pt-10 pb-8"
     >
@@ -142,7 +142,7 @@ Vue.use(Mijin, {
 
     <MjHeadline
       :id="$t('common.options')"
-      :level="4"
+      :level="3"
       :size="4"
       class="pt-10 pb-8"
     >

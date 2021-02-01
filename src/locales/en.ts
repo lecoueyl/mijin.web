@@ -16,6 +16,7 @@ module.exports = {
     expand: 'Expand',
     home: 'Home',
     methods: 'Methods',
+    menu: 'Menu',
     name: 'Name',
     options: 'Options',
     plugin: 'Plugin',

@@ -13,6 +13,9 @@ export default {
     base: '/mijin.web/',
   },
   publicRuntimeConfig: {
+    app: {
+      url: process.env.APP_URL || 'https://lecoueyl.github.io/mijin.web',
+    },
     links: {
       github: process.env.LINKS_GITHUB || 'https://github.com/lecoueyl/mijin',
     },
@@ -75,6 +78,10 @@ export default {
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: 'Tailwind CSS UI components build for Vue.js / Nuxt.js' },
       { name: 'keyword', content: 'tailwindcss,vue,nuxt,components,ui framework,component framework,ui library,component library' },
+
+      { name: 'robots', content: 'index, follow' },
+      { name: 'googlebot', content: 'index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1' },
+      { name: 'bingbot', content: 'index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1' },
     ],
     link: [
       { rel: 'apple-touch-icon', sizes: '180x180', href: '/apple-touch-icon.png' },

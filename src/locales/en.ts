@@ -425,7 +425,7 @@ module.exports = {
         delete: 'Delete',
         edit: 'Edit',
         fullWidth: 'Full width',
-        lastEdit: 'Last edition by Leonard Lecouey',
+        lastEdit: 'Last edition by John Doe',
         openApp: 'Open in App',
         share: 'Share',
         smallText: 'Small text',

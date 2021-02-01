@@ -9,7 +9,7 @@
     >
       <MjAvatar
         alt="image"
-        img="https://images.unsplash.com/photo-1576502200916-3808e07386a5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=100&q=60"
+        :src="require('~/assets/img/mijin.png')"
       />
     </Sample>
 
@@ -72,7 +72,7 @@ export default Vue.extend({
         image: [
           `<MjAvatar
   alt="image"
-  img="https://..."
+  src="https://..."
 />`,
         ],
         letter: [

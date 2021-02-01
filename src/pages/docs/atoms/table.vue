@@ -88,11 +88,11 @@
 
     <Sample
       :title="$t('props.truncate')"
-      :snippet="samples.default"
+      :snippet="samples.truncate"
     >
       <MjTable fixed>
         <MjTableHead>
-          <MjTableHeader class="bg-white dark:bg-gray-900 w-2/12">
+          <MjTableHeader class="bg-white dark:bg-gray-900 w-20">
             {{ $t('examples.itemsHeader.name') }}
           </MjTableHeader>
 
@@ -102,7 +102,7 @@
 
           <MjTableHeader
             text-align="right"
-            class="bg-white dark:bg-gray-900 w-1/12"
+            class="bg-white dark:bg-gray-900 w-16"
           >
             {{ $t('examples.itemsHeader.count') }}
           </MjTableHeader>
@@ -131,7 +131,7 @@
 
     <Sample
       :title="$t('props.density')"
-      :snippet="samples.fixed"
+      :snippet="samples.density"
     >
       <MjTable density="tight">
         <MjTableHead>
@@ -171,7 +171,7 @@
 
     <Sample
       :title="$t('props.clickable')"
-      :snippet="samples.fixed"
+      :snippet="samples.clickable"
     >
       <MjTable>
         <MjTableHead>
@@ -363,6 +363,323 @@ export default Vue.extend({
     </MjTableRow>
 
     <MjTableRow>
+      <MjTableCell>
+        ${this.array[2].name}
+      </MjTableCell>
+
+      <MjTableCell>
+        ${this.array[2].description}
+      </MjTableCell>
+
+      <MjTableCell>
+        ${this.array[2].count}
+      </MjTableCell>
+    </MjTableRow>
+  </TableBody>
+</MjTable>`,
+        ],
+        fixed: [
+          `<MjTable fixed>
+  <MjTableHead>
+    <MjTableHeader class="bg-white dark:bg-gray-900 w-2/12">
+      ${this.$t('examples.itemsHeader.name')}
+    </MjTableHeader>
+
+    <MjTableHeader class="bg-white dark:bg-gray-900">
+      ${this.$t('examples.itemsHeader.description')}
+    </MjTableHeader>
+
+    <MjTableHeader class="bg-white dark:bg-gray-900 w-1/12">
+      ${this.$t('examples.itemsHeader.count')}
+    </MjTableHeader>
+  </MjTableHead>
+
+  <TableBody>
+    <MjTableRow>
+      <MjTableCell>
+        ${this.array[0].name}
+      </MjTableCell>
+
+      <MjTableCell>
+        ${this.array[0].description}
+      </MjTableCell>
+
+      <MjTableCell>
+        ${this.array[0].count}
+      </MjTableCell>
+    </MjTableRow>
+
+    <MjTableRow>
+      <MjTableCell>
+        ${this.array[1].name}
+      </MjTableCell>
+
+      <MjTableCell>
+        ${this.array[1].description}
+      </MjTableCell>
+
+      <MjTableCell>
+        ${this.array[1].count}
+      </MjTableCell>
+    </MjTableRow>
+
+    <MjTableRow>
+      <MjTableCell>
+        ${this.array[2].name}
+      </MjTableCell>
+
+      <MjTableCell>
+        ${this.array[2].description}
+      </MjTableCell>
+
+      <MjTableCell>
+        ${this.array[2].count}
+      </MjTableCell>
+    </MjTableRow>
+  </TableBody>
+</MjTable>`,
+        ],
+        truncate: [
+          `<MjTable fixed>
+  <MjTableHead>
+    <MjTableHeader class="bg-white dark:bg-gray-900 w-20">
+      ${this.$t('examples.itemsHeader.name')}
+    </MjTableHeader>
+
+    <MjTableHeader class="bg-white dark:bg-gray-900">
+      ${this.$t('examples.itemsHeader.description')}
+    </MjTableHeader>
+
+    <MjTableHeader class="bg-white dark:bg-gray-900 w-16">
+      ${this.$t('examples.itemsHeader.count')}
+    </MjTableHeader>
+  </MjTableHead>
+
+  <TableBody>
+    <MjTableRow>
+      <MjTableCell>
+        ${this.array[0].name}
+      </MjTableCell>
+
+      <MjTableCell truncate>
+        ${this.array[0].description}
+      </MjTableCell>
+
+      <MjTableCell>
+        ${this.array[0].count}
+      </MjTableCell>
+    </MjTableRow>
+
+    <MjTableRow>
+      <MjTableCell>
+        ${this.array[1].name}
+      </MjTableCell>
+
+      <MjTableCell truncate>
+        ${this.array[1].description}
+      </MjTableCell>
+
+      <MjTableCell>
+        ${this.array[1].count}
+      </MjTableCell>
+    </MjTableRow>
+
+    <MjTableRow>
+      <MjTableCell>
+        ${this.array[2].name}
+      </MjTableCell>
+
+      <MjTableCell truncate>
+        ${this.array[2].description}
+      </MjTableCell>
+
+      <MjTableCell>
+        ${this.array[2].count}
+      </MjTableCell>
+    </MjTableRow>
+  </TableBody>
+</MjTable>`,
+        ],
+        density: [
+          `<MjTable density="tight">
+  <MjTableHead>
+    <MjTableHeader class="bg-white dark:bg-gray-900">
+      ${this.$t('examples.itemsHeader.name')}
+    </MjTableHeader>
+
+    <MjTableHeader class="bg-white dark:bg-gray-900">
+      ${this.$t('examples.itemsHeader.description')}
+    </MjTableHeader>
+
+    <MjTableHeader class="bg-white dark:bg-gray-900">
+      ${this.$t('examples.itemsHeader.count')}
+    </MjTableHeader>
+  </MjTableHead>
+
+  <TableBody>
+    <MjTableRow>
+      <MjTableCell>
+        ${this.array[0].name}
+      </MjTableCell>
+
+      <MjTableCell>
+        ${this.array[0].description}
+      </MjTableCell>
+
+      <MjTableCell>
+        ${this.array[0].count}
+      </MjTableCell>
+    </MjTableRow>
+
+    <MjTableRow>
+      <MjTableCell>
+        ${this.array[1].name}
+      </MjTableCell>
+
+      <MjTableCell>
+        ${this.array[1].description}
+      </MjTableCell>
+
+      <MjTableCell>
+        ${this.array[1].count}
+      </MjTableCell>
+    </MjTableRow>
+
+    <MjTableRow>
+      <MjTableCell>
+        ${this.array[2].name}
+      </MjTableCell>
+
+      <MjTableCell>
+        ${this.array[2].description}
+      </MjTableCell>
+
+      <MjTableCell>
+        ${this.array[2].count}
+      </MjTableCell>
+    </MjTableRow>
+  </TableBody>
+</MjTable>`,
+        ],
+        clickable: [
+          `<MjTable density="tight">
+  <MjTableHead>
+    <MjTableHeader class="bg-white dark:bg-gray-900">
+      ${this.$t('examples.itemsHeader.name')}
+    </MjTableHeader>
+
+    <MjTableHeader class="bg-white dark:bg-gray-900">
+      ${this.$t('examples.itemsHeader.description')}
+    </MjTableHeader>
+
+    <MjTableHeader class="bg-white dark:bg-gray-900">
+      ${this.$t('examples.itemsHeader.count')}
+    </MjTableHeader>
+  </MjTableHead>
+
+  <TableBody>
+    <MjTableRow clickable>
+      <MjTableCell>
+        ${this.array[0].name}
+      </MjTableCell>
+
+      <MjTableCell>
+        ${this.array[0].description}
+      </MjTableCell>
+
+      <MjTableCell>
+        ${this.array[0].count}
+      </MjTableCell>
+    </MjTableRow>
+
+    <MjTableRow clickable>
+      <MjTableCell>
+        ${this.array[1].name}
+      </MjTableCell>
+
+      <MjTableCell>
+        ${this.array[1].description}
+      </MjTableCell>
+
+      <MjTableCell>
+        ${this.array[1].count}
+      </MjTableCell>
+    </MjTableRow>
+
+    <MjTableRow clickable>
+      <MjTableCell>
+        ${this.array[2].name}
+      </MjTableCell>
+
+      <MjTableCell>
+        ${this.array[2].description}
+      </MjTableCell>
+
+      <MjTableCell>
+        ${this.array[2].count}
+      </MjTableCell>
+    </MjTableRow>
+  </TableBody>
+</MjTable>`,
+        ],
+        sort: [
+          `<MjTable>
+  <MjTableHead>
+    <MjTableHeader
+      class="bg-white dark:bg-gray-900"
+      :sort="isSorted('name')"
+      @click="sortColumn('name')"
+    >
+      ${this.$t('examples.itemsHeader.name')}
+    </MjTableHeader>
+
+    <MjTableHeader
+      class="bg-white dark:bg-gray-900"
+      :sort="isSorted('description')"
+      @click="sortColumn('description')"
+    >
+      ${this.$t('examples.itemsHeader.description')}
+    </MjTableHeader>
+
+    <MjTableHeader
+      class="bg-white dark:bg-gray-900"
+      :sort="isSorted('count')"
+      @click="sortColumn('count')"
+    >
+      ${this.$t('examples.itemsHeader.count')}
+    </MjTableHeader>
+  </MjTableHead>
+
+  <TableBody>
+    <MjTableRow clickable>
+      <MjTableCell>
+        ${this.array[0].name}
+      </MjTableCell>
+
+      <MjTableCell>
+        ${this.array[0].description}
+      </MjTableCell>
+
+      <MjTableCell>
+        ${this.array[0].count}
+      </MjTableCell>
+    </MjTableRow>
+
+    <MjTableRow clickable>
+      <MjTableCell>
+        ${this.array[1].name}
+      </MjTableCell>
+
+      <MjTableCell>
+        ${this.array[1].description}
+      </MjTableCell>
+
+      <MjTableCell>
+        ${this.array[1].count}
+      </MjTableCell>
+    </MjTableRow>
+
+    <MjTableRow clickable>
       <MjTableCell>
         ${this.array[2].name}
       </MjTableCell>

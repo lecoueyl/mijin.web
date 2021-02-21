@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/docs/atoms/skeleton", {data:[{}],fetch:{},mutations:void 0});

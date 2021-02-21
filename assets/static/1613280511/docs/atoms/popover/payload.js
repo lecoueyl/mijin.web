@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/docs/atoms/popover", {data:[{}],fetch:[],mutations:void 0});

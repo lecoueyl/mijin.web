@@ -18,7 +18,7 @@
       :snippet="samples.letter"
     >
       <MjAvatar
-        letter="BB"
+        letter="MJ"
       />
     </Sample>
 
@@ -31,7 +31,7 @@
           v-for="size in ['sm', 'base', 'lg', 'xl']"
           :key="size"
           :size="size"
-          letter="BB"
+          letter="MJ"
         />
       </div>
     </Sample>
@@ -42,7 +42,7 @@
     >
       <MjAvatar
         variant="squared"
-        letter="BB"
+        letter="MJ"
       />
     </Sample>
 
@@ -55,7 +55,7 @@
           v-for="color in ['blue', 'pink', 'teal']"
           :key="color"
           :color="color"
-          letter="BB"
+          letter="MJ"
         />
       </div>
     </Sample>
@@ -76,24 +76,24 @@ export default Vue.extend({
 />`,
         ],
         letter: [
-          '<MjAvatar letter="BB" />',
+          '<MjAvatar letter="MJ" />',
         ],
         size: [
           `<MjAvatar
   size="sm"
-  letter="BB"
+  letter="MJ"
 />`,
           `<MjAvatar
   size="base"
-  letter="BB"
+  letter="MJ"
 />`,
           `<Mjvatar
   size="lg"
-  letter="BB"
+  letter="MJ"
 />`,
           `<MjAvatar
   size="xl"
-  letter="BB"
+  letter="MJ"
 />`,
         ],
         variant: [
@@ -106,15 +106,15 @@ export default Vue.extend({
         color: [
           `<MjAvatar
   color="blue"
-  letter="BB"
+  letter="MJ"
 />`,
           `<MjAvatar
   color="pink"
-  letter="BB"
+  letter="MJ"
 />`,
           `<MjAvatar
   color="teal"
-  letter="BB"
+  letter="MJ"
 />`,
         ],
       },

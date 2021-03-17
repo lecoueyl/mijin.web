@@ -15,16 +15,14 @@ module.exports = {
   },
   purge: {
     enabled: process.env.NODE_ENV === 'production',
-    options: {
-      safelist: [/^text-/, /^bg-/],
-    },
     content: [
+      'node_modules/mijin/src/components/**/*.vue',
+      'nuxt.config.js',
+      'src/assets/css/purge-aware.txt',
       'src/components/**/*.vue',
       'src/layouts/**/*.vue',
       'src/pages/**/*.vue',
       'src/plugins/**/*.js',
-      'nuxt.config.js',
-      'node_modules/mijin/src/components/**/*.vue',
     ],
   },
 };

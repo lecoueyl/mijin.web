@@ -18,7 +18,7 @@ module.exports = {
     content: [
       'node_modules/mijin/src/components/**/*.vue',
       'nuxt.config.js',
-      'src/assets/css/purge-aware.txt',
+      'src/assets/css/safelist.txt',
       'src/components/**/*.vue',
       'src/layouts/**/*.vue',
       'src/pages/**/*.vue',

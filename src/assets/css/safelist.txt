@@ -38,8 +38,6 @@ bg-danger-600
 bg-danger-700
 bg-danger-800
 bg-danger-900
-bg-transparent
-bg-current
 bg-black
 bg-white
 bg-blue-50

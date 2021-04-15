@@ -13,6 +13,7 @@
         <MjInput
           v-model="model.signUp.username"
           :placeholder="$t('sections.organisms.form.usernamePlaceholder')"
+          autocomplete="username"
         >
           {{ $t('sections.organisms.form.username') }}
         </MjInput>
@@ -21,6 +22,7 @@
           v-model="model.signUp.email"
           type="email"
           placeholder="email@address.com"
+          autocomplete="email"
         >
           {{ $t('sections.organisms.form.email') }}
         </MjInput>
@@ -54,9 +56,7 @@
                 href="#"
                 color="gray"
                 underline
-              >
-                {{ $t('sections.organisms.form.termsOfUse') }}
-              </MjLink>
+              >{{ $t('sections.organisms.form.termsOfUse') }}</MjLink>
             </template>
 
             <template #privacy>
@@ -64,9 +64,7 @@
                 href="#"
                 color="gray"
                 underline
-              >
-                {{ $t('sections.organisms.form.privacy') }}
-              </MjLink>
+              >{{ $t('sections.organisms.form.privacy') }}</MjLink>
             </template>
           </i18n>
         </MjCheckbox>
@@ -94,13 +92,17 @@
       :snippet="samples.login"
     >
       <form class="lg:w-1/2 lg:mx-auto grid gap-4">
-        <MjInput v-model="model.signIn.username">
+        <MjInput
+          v-model="model.signIn.username"
+          autocomplete="username"
+        >
           {{ $t('sections.organisms.form.username') }}
         </MjInput>
 
         <MjInput
           v-model="model.signIn.password"
           type="password"
+          autocomplete="current-password"
         >
           {{ $t('sections.organisms.form.password') }}
         </MjInput>
@@ -134,6 +136,7 @@
           <MjInput
             v-model="model.vueForm.email"
             name="email"
+            autocomplete="email"
             required
             :status="vueFormState.email && vueFormState.email.$touched && vueFormState.email.$invalid ? 'error' : null"
             type="email"
@@ -160,6 +163,7 @@
           <MjInput
             v-model="model.vueForm.password"
             name="password"
+            autocomplete="new-password"
             pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$"
             required
             :status="vueFormState.password && vueFormState.password.$touched && vueFormState.password.$invalid ? 'error' : null"
@@ -220,12 +224,16 @@ export default Vue.extend({
       samples: {
         login: [
           `<form class="lg:w-1/2 lg:mx-auto grid gap-4">
-  <MjInput v-model="model.signIn.username">
+  <MjInput
+    v-model="model.signIn.username"
+    autocomplete="username"
+  >
     ${this.$t('sections.organisms.form.username')}
   </MjInput>
 
   <MjInput
     v-model="model.signIn.password"
+    autocomplete="current-password"
     type="password"
   >
     ${this.$t('sections.organisms.form.password')}
@@ -255,6 +263,7 @@ export default Vue.extend({
   <validate>
     <MjInput
       v-model="model.vueForm.email"
+      autocomplete="email"
       name="email"
       type="email"
       required
@@ -280,6 +289,7 @@ export default Vue.extend({
   <validate>
     <MjInput
       v-model="model.vueForm.password"
+      autocomplete="new-password"
       name="password"
       type="password"
       required

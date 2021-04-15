@@ -119,6 +119,15 @@
         {{ $t('props.loading') }}
       </MjButton>
     </Sample>
+
+    <Sample
+      :title="$t('props.busy')"
+      :snippet="samples.busy"
+    >
+      <MjButton busy>
+        {{ $t('props.busy') }}
+      </MjButton>
+    </Sample>
   </LayoutDoc>
 </template>
 
@@ -206,6 +215,11 @@ export default Vue.extend({
         loading: [
           `<MjButton loading>
   ${this.$t('props.loading')}
+</MjButton>`,
+        ],
+        busy: [
+          `<MjButton busy>
+  ${this.$t('props.busy')}
 </MjButton>`,
         ],
       },

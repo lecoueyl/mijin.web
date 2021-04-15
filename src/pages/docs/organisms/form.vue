@@ -1,3 +1,4 @@
+/* eslint-disable vue/multiline-html-element-content-newline */
 <template>
   <LayoutDoc
     :title="$t('sections.organisms.form.title')"
@@ -222,6 +223,87 @@ export default Vue.extend({
         },
       },
       samples: {
+        signUp: [
+          `<form
+  autocomplete="off"
+  class="lg:w-1/2 lg:mx-auto grid gap-4"
+>
+  <MjInput
+    v-model="model.signUp.username"
+    :placeholder="$t('sections.organisms.form.usernamePlaceholder')"
+    autocomplete="username"
+  >
+    ${this.$t('sections.organisms.form.username')}
+  </MjInput>
+
+  <MjInput
+    v-model="model.signUp.email"
+    type="email"
+    placeholder="email@address.com"
+    autocomplete="email"
+  >
+    ${this.$t('sections.organisms.form.email')}
+  </MjInput>
+
+  <MjSelect
+    v-model="model.signUp.department"
+    :placeholder="$t('sections.organisms.form.selectDepartment')"
+  >
+    <option
+      v-for="item in $t('examples.items')"
+      :key="item.name"
+      :value="item.name"
+    >
+      {{ item.name }}
+    </option>
+
+    <template #label>
+      ${this.$t('sections.organisms.form.department')}
+    </template>
+  </MjSelect>
+
+  <MjCheckbox
+    v-model="model.signUp.terms"
+    name="checkbox"
+  >
+    <i18n
+      path="sections.organisms.form.agreedToTerms"
+    >
+      <template #terms>
+        <MjLink
+          href="#"
+          color="gray"
+          underline
+        >${this.$t('sections.organisms.form.termsOfUse')}</MjLink>
+      </template>
+
+      <template #privacy>
+        <MjLink
+          href="#"
+          color="gray"
+          underline
+        >${this.$t('sections.organisms.form.privacy')}</MjLink>
+      </template>
+    </i18n>
+  </MjCheckbox>
+
+  <MjButton class="mt-4">
+    ${this.$t('sections.organisms.form.signIn')}
+  </MjButton>
+
+  <i18n
+    path="sections.organisms.form.alreadyAUser"
+    tag="div"
+    class="text-center"
+  >
+    <template #login>
+      <MjLink href="#">
+        ${this.$t('sections.organisms.form.login')}
+      </MjLink>
+    </template>
+  </i18n>
+</form>`,
+        ],
         login: [
           `<form class="lg:w-1/2 lg:mx-auto grid gap-4">
   <MjInput

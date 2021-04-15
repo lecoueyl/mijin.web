@@ -13,6 +13,21 @@
     </Sample>
 
     <Sample
+      :title="$t('props.color')"
+      :snippet="samples.color"
+    >
+      <div class="space-x-4">
+        <MjButton color="warning">
+          warning
+        </MjButton>
+
+        <MjButton color="danger">
+          danger
+        </MjButton>
+      </div>
+    </Sample>
+
+    <Sample
       :title="$t('props.secondary')"
       :snippet="samples.secondary"
     >
@@ -119,6 +134,15 @@
         {{ $t('props.loading') }}
       </MjButton>
     </Sample>
+
+    <Sample
+      :title="$t('props.busy')"
+      :snippet="samples.busy"
+    >
+      <MjButton busy>
+        {{ $t('props.busy') }}
+      </MjButton>
+    </Sample>
   </LayoutDoc>
 </template>
 
@@ -132,6 +156,14 @@ export default Vue.extend({
         default: [
           `<MjButton>
   ${this.$t('props.default')}
+</MjButton>`,
+        ],
+        color: [
+          `<MjButton color="warning">
+  warning
+</MjButton>`,
+          `<MjButton color="danger">
+  danger
 </MjButton>`,
         ],
         secondary: [
@@ -206,6 +238,11 @@ export default Vue.extend({
         loading: [
           `<MjButton loading>
   ${this.$t('props.loading')}
+</MjButton>`,
+        ],
+        busy: [
+          `<MjButton busy>
+  ${this.$t('props.busy')}
 </MjButton>`,
         ],
       },

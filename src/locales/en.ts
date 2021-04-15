@@ -40,6 +40,7 @@ module.exports = {
     align: 'Align',
     animate: 'Animate',
     bordered: 'Bordered',
+    busy: 'Busy',
     circle: 'Circle',
     clickable: 'Clickable',
     color: 'Color',

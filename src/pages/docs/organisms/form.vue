@@ -1,3 +1,4 @@
+/* eslint-disable vue/multiline-html-element-content-newline */
 <template>
   <LayoutDoc
     :title="$t('sections.organisms.form.title')"
@@ -13,6 +14,7 @@
         <MjInput
           v-model="model.signUp.username"
           :placeholder="$t('sections.organisms.form.usernamePlaceholder')"
+          autocomplete="username"
         >
           {{ $t('sections.organisms.form.username') }}
         </MjInput>
@@ -21,6 +23,7 @@
           v-model="model.signUp.email"
           type="email"
           placeholder="email@address.com"
+          autocomplete="email"
         >
           {{ $t('sections.organisms.form.email') }}
         </MjInput>
@@ -54,9 +57,7 @@
                 href="#"
                 color="gray"
                 underline
-              >
-                {{ $t('sections.organisms.form.termsOfUse') }}
-              </MjLink>
+              >{{ $t('sections.organisms.form.termsOfUse') }}</MjLink>
             </template>
 
             <template #privacy>
@@ -64,9 +65,7 @@
                 href="#"
                 color="gray"
                 underline
-              >
-                {{ $t('sections.organisms.form.privacy') }}
-              </MjLink>
+              >{{ $t('sections.organisms.form.privacy') }}</MjLink>
             </template>
           </i18n>
         </MjCheckbox>
@@ -94,13 +93,17 @@
       :snippet="samples.login"
     >
       <form class="lg:w-1/2 lg:mx-auto grid gap-4">
-        <MjInput v-model="model.signIn.username">
+        <MjInput
+          v-model="model.signIn.username"
+          autocomplete="username"
+        >
           {{ $t('sections.organisms.form.username') }}
         </MjInput>
 
         <MjInput
           v-model="model.signIn.password"
           type="password"
+          autocomplete="current-password"
         >
           {{ $t('sections.organisms.form.password') }}
         </MjInput>
@@ -134,6 +137,7 @@
           <MjInput
             v-model="model.vueForm.email"
             name="email"
+            autocomplete="email"
             required
             :status="vueFormState.email && vueFormState.email.$touched && vueFormState.email.$invalid ? 'error' : null"
             type="email"
@@ -160,6 +164,7 @@
           <MjInput
             v-model="model.vueForm.password"
             name="password"
+            autocomplete="new-password"
             pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$"
             required
             :status="vueFormState.password && vueFormState.password.$touched && vueFormState.password.$invalid ? 'error' : null"
@@ -218,14 +223,99 @@ export default Vue.extend({
         },
       },
       samples: {
+        signUp: [
+          `<form
+  autocomplete="off"
+  class="lg:w-1/2 lg:mx-auto grid gap-4"
+>
+  <MjInput
+    v-model="model.signUp.username"
+    :placeholder="$t('sections.organisms.form.usernamePlaceholder')"
+    autocomplete="username"
+  >
+    ${this.$t('sections.organisms.form.username')}
+  </MjInput>
+
+  <MjInput
+    v-model="model.signUp.email"
+    type="email"
+    placeholder="email@address.com"
+    autocomplete="email"
+  >
+    ${this.$t('sections.organisms.form.email')}
+  </MjInput>
+
+  <MjSelect
+    v-model="model.signUp.department"
+    :placeholder="$t('sections.organisms.form.selectDepartment')"
+  >
+    <option
+      v-for="item in $t('examples.items')"
+      :key="item.name"
+      :value="item.name"
+    >
+      {{ item.name }}
+    </option>
+
+    <template #label>
+      ${this.$t('sections.organisms.form.department')}
+    </template>
+  </MjSelect>
+
+  <MjCheckbox
+    v-model="model.signUp.terms"
+    name="checkbox"
+  >
+    <i18n
+      path="sections.organisms.form.agreedToTerms"
+    >
+      <template #terms>
+        <MjLink
+          href="#"
+          color="gray"
+          underline
+        >${this.$t('sections.organisms.form.termsOfUse')}</MjLink>
+      </template>
+
+      <template #privacy>
+        <MjLink
+          href="#"
+          color="gray"
+          underline
+        >${this.$t('sections.organisms.form.privacy')}</MjLink>
+      </template>
+    </i18n>
+  </MjCheckbox>
+
+  <MjButton class="mt-4">
+    ${this.$t('sections.organisms.form.signIn')}
+  </MjButton>
+
+  <i18n
+    path="sections.organisms.form.alreadyAUser"
+    tag="div"
+    class="text-center"
+  >
+    <template #login>
+      <MjLink href="#">
+        ${this.$t('sections.organisms.form.login')}
+      </MjLink>
+    </template>
+  </i18n>
+</form>`,
+        ],
         login: [
           `<form class="lg:w-1/2 lg:mx-auto grid gap-4">
-  <MjInput v-model="model.signIn.username">
+  <MjInput
+    v-model="model.signIn.username"
+    autocomplete="username"
+  >
     ${this.$t('sections.organisms.form.username')}
   </MjInput>
 
   <MjInput
     v-model="model.signIn.password"
+    autocomplete="current-password"
     type="password"
   >
     ${this.$t('sections.organisms.form.password')}
@@ -255,6 +345,7 @@ export default Vue.extend({
   <validate>
     <MjInput
       v-model="model.vueForm.email"
+      autocomplete="email"
       name="email"
       type="email"
       required
@@ -280,6 +371,7 @@ export default Vue.extend({
   <validate>
     <MjInput
       v-model="model.vueForm.password"
+      autocomplete="new-password"
       name="password"
       type="password"
       required

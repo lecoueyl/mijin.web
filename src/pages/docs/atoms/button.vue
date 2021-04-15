@@ -13,6 +13,21 @@
     </Sample>
 
     <Sample
+      :title="$t('props.color')"
+      :snippet="samples.color"
+    >
+      <div class="space-x-4">
+        <MjButton color="warning">
+          warning
+        </MjButton>
+
+        <MjButton color="danger">
+          danger
+        </MjButton>
+      </div>
+    </Sample>
+
+    <Sample
       :title="$t('props.secondary')"
       :snippet="samples.secondary"
     >
@@ -141,6 +156,14 @@ export default Vue.extend({
         default: [
           `<MjButton>
   ${this.$t('props.default')}
+</MjButton>`,
+        ],
+        color: [
+          `<MjButton color="warning">
+  warning
+</MjButton>`,
+          `<MjButton color="danger">
+  danger
 </MjButton>`,
         ],
         secondary: [

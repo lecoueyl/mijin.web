@@ -105,7 +105,7 @@ export default Vue.extend({
 </MjBadge>`,
         ],
         size: [
-          `<MjBadge size="small">
+          `<MjBadge size="sm">
   ${this.$t('props.size')}
 </MjBadge>`,
         ],

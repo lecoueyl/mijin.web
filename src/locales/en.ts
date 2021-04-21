@@ -248,6 +248,10 @@ module.exports = {
         },
       },
 
+      paragraph: {
+        title: 'Paragraph',
+      },
+
       popover: {
         title: 'Popover',
 

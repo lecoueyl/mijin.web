@@ -69,6 +69,21 @@
           {{ $t('examples.items.3.name') }}
         </MjListItem>
       </MjList>
+
+      <MjList
+        gutter="xl"
+        class="mt-4"
+      >
+        <MjListItem>
+          {{ $t('examples.items.1.name') }}
+        </MjListItem>
+        <MjListItem>
+          {{ $t('examples.items.2.name') }}
+        </MjListItem>
+        <MjListItem>
+          {{ $t('examples.items.3.name') }}
+        </MjListItem>
+      </MjList>
     </Sample>
 
     <Sample
@@ -138,6 +153,17 @@ export default Vue.extend({
         ],
         gutter: [
           `<MjList gutter="lg">
+  <MjListItem>
+    ${this.$t('examples.items.1.name')}
+  </MjListItem>
+  <MjListItem>
+    ${this.$t('examples.items.2.name')}
+  </MjListItem>
+  <MjListItem>
+    ${this.$t('examples.items.3.name')}
+  </MjListItem>
+</MjList>`,
+          `<MjList gutter="xl">
   <MjListItem>
     ${this.$t('examples.items.1.name')}
   </MjListItem>

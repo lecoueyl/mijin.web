@@ -333,7 +333,7 @@ export default Vue.extend({
     </MjTableHeader>
   </MjTableHead>
 
-  <TableBody>
+  <MjTableBody>
     <MjTableRow>
       <MjTableCell>
         ${this.array[0].name}
@@ -375,7 +375,7 @@ export default Vue.extend({
         ${this.array[2].count}
       </MjTableCell>
     </MjTableRow>
-  </TableBody>
+  </MjTableBody>
 </MjTable>`,
         ],
         fixed: [
@@ -394,7 +394,7 @@ export default Vue.extend({
     </MjTableHeader>
   </MjTableHead>
 
-  <TableBody>
+  <MjTableBody>
     <MjTableRow>
       <MjTableCell>
         ${this.array[0].name}
@@ -436,7 +436,7 @@ export default Vue.extend({
         ${this.array[2].count}
       </MjTableCell>
     </MjTableRow>
-  </TableBody>
+  </MjTableBody>
 </MjTable>`,
         ],
         truncate: [
@@ -455,7 +455,7 @@ export default Vue.extend({
     </MjTableHeader>
   </MjTableHead>
 
-  <TableBody>
+  <MjTableBody>
     <MjTableRow>
       <MjTableCell>
         ${this.array[0].name}
@@ -497,7 +497,7 @@ export default Vue.extend({
         ${this.array[2].count}
       </MjTableCell>
     </MjTableRow>
-  </TableBody>
+  </MjTableBody>
 </MjTable>`,
         ],
         density: [
@@ -516,7 +516,7 @@ export default Vue.extend({
     </MjTableHeader>
   </MjTableHead>
 
-  <TableBody>
+  <MjTableBody>
     <MjTableRow>
       <MjTableCell>
         ${this.array[0].name}
@@ -558,7 +558,7 @@ export default Vue.extend({
         ${this.array[2].count}
       </MjTableCell>
     </MjTableRow>
-  </TableBody>
+  </MjTableBody>
 </MjTable>`,
         ],
         clickable: [
@@ -577,7 +577,7 @@ export default Vue.extend({
     </MjTableHeader>
   </MjTableHead>
 
-  <TableBody>
+  <MjTableBody>
     <MjTableRow clickable>
       <MjTableCell>
         ${this.array[0].name}
@@ -619,7 +619,7 @@ export default Vue.extend({
         ${this.array[2].count}
       </MjTableCell>
     </MjTableRow>
-  </TableBody>
+  </MjTableBody>
 </MjTable>`,
         ],
         sort: [
@@ -650,7 +650,7 @@ export default Vue.extend({
     </MjTableHeader>
   </MjTableHead>
 
-  <TableBody>
+  <MjTableBody>
     <MjTableRow clickable>
       <MjTableCell>
         ${this.array[0].name}
@@ -692,7 +692,7 @@ export default Vue.extend({
         ${this.array[2].count}
       </MjTableCell>
     </MjTableRow>
-  </TableBody>
+  </MjTableBody>
 </MjTable>`,
         ],
       };

@@ -17,12 +17,16 @@
       :snippet="samples.color"
     >
       <div class="space-x-4">
-        <MjButton color="warning">
-          warning
-        </MjButton>
-
         <MjButton color="danger">
           danger
+        </MjButton>
+
+        <MjButton color="success">
+          success
+        </MjButton>
+
+        <MjButton color="warning">
+          warning
         </MjButton>
       </div>
     </Sample>
@@ -161,6 +165,9 @@ export default Vue.extend({
         color: [
           `<MjButton color="warning">
   warning
+</MjButton>`,
+          `<MjButton color="success">
+  success
 </MjButton>`,
           `<MjButton color="danger">
   danger

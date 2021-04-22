@@ -9,7 +9,7 @@
       :snippet="samples.default"
     >
       <MjPopover align="left">
-        <MjButton>
+        <MjButton class="w-full">
           {{ $t('props.default') }}
         </MjButton>
 

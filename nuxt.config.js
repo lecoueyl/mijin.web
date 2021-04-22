@@ -47,6 +47,7 @@ export default {
         list: {},
         modal: {},
         note: {},
+        paragraph: {},
         popover: {},
         progress: {},
         radio: {},

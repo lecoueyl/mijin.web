@@ -48,6 +48,7 @@ module.exports = {
     density: 'Density',
     disabled: 'Disabled',
     dismissible: 'Dismissible',
+    dismissButton: 'Dismiss button',
     divided: 'Divided',
     expanded: 'Expanded',
     external: 'External',
@@ -246,6 +247,10 @@ module.exports = {
             description: 'Override default icon',
           },
         },
+      },
+
+      paragraph: {
+        title: 'Paragraph',
       },
 
       popover: {

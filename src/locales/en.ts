@@ -48,6 +48,7 @@ module.exports = {
     density: 'Density',
     disabled: 'Disabled',
     dismissible: 'Dismissible',
+    dismissButton: 'Dismiss button',
     divided: 'Divided',
     expanded: 'Expanded',
     external: 'External',

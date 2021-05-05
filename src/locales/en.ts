@@ -321,6 +321,18 @@ module.exports = {
         },
       },
 
+      segmentedControl: {
+        title: 'Segmented control',
+      },
+
+      segmentedcontrolitem: {
+        events: {
+          select: {
+            description: 'Emitted when an item is selected',
+          },
+        },
+      },
+
       select: {
         title: 'Select',
 

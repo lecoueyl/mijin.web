@@ -328,7 +328,7 @@ module.exports = {
       segmentedcontrolitem: {
         events: {
           select: {
-            description: 'Emitted when an option is selected',
+            description: 'Emitted when an item is selected',
           },
         },
       },

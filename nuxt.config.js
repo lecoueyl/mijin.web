@@ -51,6 +51,7 @@ export default {
         popover: {},
         progress: {},
         radio: {},
+        segmentedControl: {},
         select: {},
         skeleton: {},
         statusDot: {},

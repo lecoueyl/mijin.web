@@ -21,6 +21,7 @@
           v-for="item in [
             { color: 'primary', value: '12'},
             { color: 'blue', value: '999'},
+            { color: 'pink', value: '42'},
           ]"
           :key="item.color"
           :color="item.color"
@@ -36,23 +37,16 @@
     >
       <div class="space-x-4">
         <MjBadge
+          v-for="item in [
+            { color: 'primary', value: '12'},
+            { color: 'cyan', value: '999'},
+            { color: 'red', value: '42'},
+          ]"
+          :key="item.color"
+          :color="item.color"
           variant="outline"
         >
-          42
-        </MjBadge>
-
-        <MjBadge
-          color="primary"
-          variant="outline"
-        >
-          999
-        </MjBadge>
-
-        <MjBadge
-          color="blue"
-          variant="outline"
-        >
-          12
+          {{ item.value }}
         </MjBadge>
       </div>
     </Sample>
@@ -61,9 +55,15 @@
       :title="$t('props.size')"
       :snippet="samples.size"
     >
-      <MjBadge size="sm">
-        {{ $t('props.size') }}
-      </MjBadge>
+      <div class="space-x-4 flex items-center">
+        <MjBadge
+          v-for="size in ['sm', 'base']"
+          :key="size"
+          :size="size"
+        >
+          {{ size }}
+        </MjBadge>
+      </div>
     </Sample>
   </LayoutDoc>
 </template>
@@ -86,19 +86,25 @@ export default Vue.extend({
           `<MjBadge color="blue">
   999
 </MjBadge>`,
-        ],
-        variant: [
-          `<MjBadge variant="outline">
+          `<MjBadge color="pink">
   42
 </MjBadge>`,
+        ],
+        variant: [
           `<MjBadge
   color="primary"
+  variant="outline"
+>
+  12
+</MjBadge>`,
+          `<MjBadge
+  color="cyan"
   variant="outline"
 >
   999
 </MjBadge>`,
           `<MjBadge
-  color="blue"
+  color="red"
   variant="outline"
 >
   12
@@ -106,7 +112,10 @@ export default Vue.extend({
         ],
         size: [
           `<MjBadge size="sm">
-  ${this.$t('props.size')}
+  sm
+</MjBadge>`,
+          `<MjBadge>
+  base
 </MjBadge>`,
         ],
       },

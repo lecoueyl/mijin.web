@@ -105,7 +105,8 @@ export default {
   ** Global CSS
   */
   css: [
-    '~/assets/css/main.scss',
+    '~/assets/css/main.css',
+    '~/assets/css/highlight.js.css',
   ],
   /*
   ** Plugins to load before mounting the App

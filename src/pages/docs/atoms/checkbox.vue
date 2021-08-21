@@ -40,6 +40,18 @@
     </Sample>
 
     <Sample
+      :title="$t('props.mixed')"
+      :snippet="samples.mixed"
+    >
+      <MjCheckbox
+        name="mixed"
+        :mixed="true"
+      >
+        {{ $t('props.mixed') }}
+      </MjCheckbox>
+    </Sample>
+
+    <Sample
       :title="$t('props.disabled')"
       :snippet="samples.disabled"
     >
@@ -53,6 +65,13 @@
 
         <MjCheckbox
           v-model="model.true"
+          disabled
+        >
+          {{ $t('props.disabled') }}
+        </MjCheckbox>
+
+        <MjCheckbox
+          :mixed="true"
           disabled
         >
           {{ $t('props.disabled') }}
@@ -91,7 +110,7 @@ export default Vue.extend({
   v-model="value"
   name="checkbox"
 >
-  Default
+  ${this.$t('props.default')}
 </MjCheckbox>`,
         ],
         array: [
@@ -111,13 +130,21 @@ export default Vue.extend({
   2
 </MjCheckbox>`,
         ],
+        mixed: [
+          `<MjCheckbox
+  name="mixed"
+  :mixed="true"
+>
+  ${this.$t('props.mixed')}
+</MjCheckbox>`,
+        ],
         disabled: [
           `<MjCheckbox
   v-model="value"
   name="checkbox"
   disabled
 >
-  Disabled
+  ${this.$t('props.disabled')}
 </MjCheckbox>`,
         ],
         events: [

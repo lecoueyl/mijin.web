@@ -132,7 +132,7 @@
             {{ $t(`sections.${sectionName}.title`) }}
           </h1>
 
-          <ul class="font-medium text-base lg:text-sm space-y-2 pb-10">
+          <ul class="font-medium text-base lg:text-sm space-y-1 pb-10">
             <li
               v-for="(menu, menuName) in section"
               :key="menuName"
@@ -145,11 +145,13 @@
               >
                 <a
                   :href="href"
-                  :class="{
-                    'text-gray-700 dark:text-gray-300 hover:text-primary-500 dark:hover:text-primary-500': !isActive,
-                    'text-primary-700 dark:text-primary-700 bg-primary-200 hover:text-primary-700 dark:hover:text-primary-700': isActive,
-                  }"
-                  class="transition-colors duration-200 ease-in-out px-4 py-1 block rounded focus:outline-none focus:ring-2 focus:ring-primary-500"
+                  :class="[
+                    'transition-colors ease-in-out px-4 py-2 block rounded focus:outline-none focus:ring-2 focus:ring-primary-500',
+                    {
+                      'text-gray-700 dark:text-gray-300 hover:text-primary-500 dark:hover:text-primary-500': !isActive,
+                      'text-primary-700 dark:text-primary-700 bg-primary-200 hover:text-primary-700 dark:hover:text-primary-700': isActive,
+                    }
+                  ]"
                   @click="navigate"
                 >
                   {{ $t(`sections.${sectionName}.${menuName}.title`) }}

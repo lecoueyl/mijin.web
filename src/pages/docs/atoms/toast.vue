@@ -31,6 +31,23 @@
 
       <MjToast ref="default" />
     </Sample>
+
+    <Sample
+      :title="$t('props.position')"
+      :snippet="samples.position"
+    >
+      <MjButton
+        @click="$refs.position.log($t('examples.summary'))"
+      >
+        {{ $t('props.position') }}
+      </MjButton>
+
+      <MjToast
+        ref="position"
+        align="left"
+        position="top"
+      />
+    </Sample>
   </LayoutDoc>
 </template>
 
@@ -45,7 +62,7 @@ export default Vue.extend({
           `<MjToast ref="toast" />
 
 <MjButton @click="$refs.toast.log('${this.$t('examples.summary')}')">
-  Default
+  Log
 </MjButton>`,
         ],
         type: [
@@ -61,6 +78,17 @@ export default Vue.extend({
 
 <MjButton @click="$refs.toast.error('${this.$t('examples.summary')}')">
   Error
+</MjButton>`,
+        ],
+        position: [
+          `<MjToast
+  ref="toast"
+  align="left"
+  position="top"
+/>
+
+<MjButton @click="$refs.toast.log('${this.$t('examples.summary')}')">
+  ${this.$t('props.position')}
 </MjButton>`,
         ],
       },

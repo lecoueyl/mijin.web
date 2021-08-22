@@ -1,5 +1,8 @@
 <template>
-  <header class="fixed top-0 z-30 w-full p-4 bg-white dark:bg-gray-900 border-b border-gray-100 dark:border-gray-800">
+  <header
+    class="fixed top-0 z-30 w-full p-4 bg-white border-b border-gray-100 backdrop-filter backdrop-blur-sm backrop-saturate-150 bg-opacity-75
+    dark:bg-gray-900 dark:border-gray-800 dark:bg-opacity-75"
+  >
     <div class="container mx-auto flex items-center md:px-6">
       <nuxt-link
         :to="localePath('index')"

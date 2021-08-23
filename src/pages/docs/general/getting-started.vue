@@ -24,8 +24,8 @@
 
     <CodeSnippet
       :snippets="{
-        npm: 'npm install mijin --save-dev',
-        yarn: 'yarn add mijin --dev',
+        npm: 'npm install mijin tailwindcss --save',
+        yarn: 'yarn add mijin tailwindcss',
       }"
     />
 

@@ -33,8 +33,12 @@
     "src/*"
   ],
   "dependencies": {
+    "@highlightjs/vue-plugin": "^1.0.2",
+    "highlight.js": "^10.7.2",
+    "mijin": "^1.4.0",
     "nuxt": "^2.15.8",
     "nuxt-i18n": "^6.27.3",
+    "tailwindcss": "^2.2.7",
     "vue-clipboard2": "^0.3.1"
   },
   "devDependencies": {
@@ -57,16 +61,13 @@
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-import-resolver-nuxt": "^1.0.1",
     "eslint-plugin-nuxt": "^2.0.0",
-    "highlight.js": "^10.7.2",
     "jest": "^27.0.6",
-    "mijin": "^1.4.0",
     "npm-link-check": "^4.0.0",
     "postcss": "^8.3.6",
     "stylelint": "^13.13.1",
     "stylelint-config-rational-order": "^0.1.2",
     "stylelint-config-standard": "^22.0.0",
     "stylelint-order": "^4.1.0",
-    "tailwindcss": "^2.2.7",
     "ts-jest": "^27.0.5",
     "vue-form": "^4.10.3",
     "vue-jest": "^3.0.7"

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/docs/atoms/modal", {data:[{}],fetch:{},mutations:void 0});

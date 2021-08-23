@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/docs/atoms/statusIcon", {data:[{}],fetch:{},mutations:void 0});

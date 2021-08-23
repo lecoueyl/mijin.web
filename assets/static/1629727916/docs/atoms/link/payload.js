@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/docs/atoms/link", {data:[{}],fetch:{},mutations:void 0});

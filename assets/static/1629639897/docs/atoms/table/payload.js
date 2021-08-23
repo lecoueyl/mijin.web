@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/docs/atoms/table", {data:[{}],fetch:{},mutations:void 0});

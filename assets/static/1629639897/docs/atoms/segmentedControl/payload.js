@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/docs/atoms/segmentedControl", {data:[{}],fetch:{},mutations:void 0});

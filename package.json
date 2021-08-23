@@ -35,7 +35,7 @@
   "dependencies": {
     "@highlightjs/vue-plugin": "^1.0.2",
     "highlight.js": "^10.7.2",
-    "mijin": "^1.4.0",
+    "mijin": "file:../mijin",
     "nuxt": "^2.15.8",
     "nuxt-i18n": "^6.27.3",
     "tailwindcss": "^2.2.7",

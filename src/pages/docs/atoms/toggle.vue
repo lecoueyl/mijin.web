@@ -8,10 +8,7 @@
       :title="$t('props.default')"
       :snippet="samples.default"
     >
-      <MjToggle
-        v-model="model.default"
-        name="Toggle"
-      >
+      <MjToggle v-model="model.default">
         {{ $t('props.default') }}
       </MjToggle>
     </Sample>
@@ -41,16 +38,55 @@
       :title="$t('props.size')"
       :snippet="samples.size"
     >
-      <div class="flex items-center space-x-8">
+      <div class="flex space-x-8">
         <MjToggle
           v-for="size in ['sm', 'base']"
           :key="size"
           v-model="model.size"
           :size="size"
         >
-          <span :class="{'text-sm leading-loose' : size === 'sm'}">{{ size }}</span>
+          {{ size }}
         </MjToggle>
       </div>
+    </Sample>
+
+    <Sample
+      :title="$t('props.reversed')"
+      :snippet="samples.reversed"
+    >
+      <MjToggle
+        v-model="model.reversed"
+        reversed
+      >
+        <div class="pr-4">
+          <h4 class="font-medium">
+            {{ $t('props.reversed') }}
+          </h4>
+          <p class="text-sm">
+            {{ $t('examples.summary') }}
+          </p>
+        </div>
+      </MjToggle>
+    </Sample>
+
+    <Sample
+      :title="$t('props.reversed')"
+      :snippet="samples.centered"
+    >
+      <MjToggle
+        v-model="model.centered"
+        centered
+        reversed
+      >
+        <div class="pr-4">
+          <h4 class="font-medium">
+            {{ $t('props.centered') }}
+          </h4>
+          <p class="text-sm">
+            {{ $t('examples.summary') }}
+          </p>
+        </div>
+      </MjToggle>
     </Sample>
 
     <Sample
@@ -76,13 +112,14 @@ export default Vue.extend({
         false: false,
         true: true,
         size: false,
+        reversed: true,
+        centered: false,
         event: false,
       },
       samples: {
         default: [
           `<MjToggle
   v-model="value"
-  name="Toggle"
 >
   Default
 </MjToggle>`,
@@ -90,7 +127,6 @@ export default Vue.extend({
         disabled: [
           `<MjToggle
   v-model="value"
-  name="Toggle"
   disabled
 >
   Disabled
@@ -99,7 +135,6 @@ export default Vue.extend({
         size: [
           `<MjToggle
   v-model="value"
-  name="Toggle"
   size="sm"
 >
   sm
@@ -111,6 +146,37 @@ export default Vue.extend({
   size="base"
 >
   base
+</MjToggle>`,
+        ],
+        reversed: [
+          `<MjToggle
+  v-model="value"
+  reversed
+>
+  <div class="pr-4">
+    <h4 class="font-medium">
+      ${this.$t('props.centered')}
+    </h4>
+    <p class="text-sm">
+      ${this.$t('examples.summary')}
+    </p>
+  </div>
+</MjToggle>`,
+        ],
+        centered: [
+          `<MjToggle
+  v-model="value"
+  centered
+  reversed
+>
+  <div class="pr-4">
+    <h4 class="font-medium">
+      ${this.$t('props.centered')}
+    </h4>
+    <p class="text-sm">
+      ${this.$t('examples.summary')}
+    </p>
+  </div>
 </MjToggle>`,
         ],
         events: [

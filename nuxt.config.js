@@ -9,6 +9,7 @@ export default {
   ** See https://nuxtjs.org/api/configuration-target
   */
   target: 'static',
+  ssr: false,
   router: {
     // github page support
     base,

@@ -34,7 +34,7 @@
   ],
   "dependencies": {
     "highlight.js": "^10.7.2",
-    "mijin": "^1.5.0",
+    "mijin": "^1.5.1",
     "nuxt": "^2.15.8",
     "nuxt-i18n": "^6.27.3",
     "tailwindcss": "^2.2.7",

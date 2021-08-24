@@ -38,15 +38,18 @@
       :title="$t('props.size')"
       :snippet="samples.size"
     >
-      <div class="flex space-x-8">
-        <MjToggle
+      <div class="grid grid-cols-4 gap-4">
+        <div
           v-for="size in ['sm', 'base']"
           :key="size"
-          v-model="model.size"
-          :size="size"
         >
-          {{ size }}
-        </MjToggle>
+          <MjToggle
+            v-model="model.size"
+            :size="size"
+          >
+            {{ size }}
+          </MjToggle>
+        </div>
       </div>
     </Sample>
 
@@ -70,7 +73,7 @@
     </Sample>
 
     <Sample
-      :title="$t('props.reversed')"
+      :title="$t('props.centered')"
       :snippet="samples.centered"
     >
       <MjToggle

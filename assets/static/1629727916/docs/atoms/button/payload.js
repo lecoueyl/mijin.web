@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/docs/atoms/button", {data:[{}],fetch:{},mutations:void 0});

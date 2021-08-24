@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/docs/foundations/transitions", {data:[{}],fetch:{},mutations:void 0});

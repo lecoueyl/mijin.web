@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/docs/general/getting-started", {data:[{}],fetch:{},mutations:void 0});

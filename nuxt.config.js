@@ -100,6 +100,14 @@ export default {
       { rel: 'manifest', href: `${base}site.webmanifest` },
       { rel: 'mask-icon', href: `${base}safari-pinned-tab.svg`, color: '#ffffff' },
     ],
+    script: [
+      {
+        src: 'https://plausible.lecouey.me/js/plausible.js',
+        async: true,
+        defer: true,
+        'data-domain': 'lecoueyl.github.io/mijin.web',
+      },
+    ],
   },
   /*
   ** Global CSS

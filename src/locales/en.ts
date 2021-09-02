@@ -78,6 +78,7 @@ module.exports = {
     score: 'Score',
     secondary: 'Secondary',
     size: 'Size',
+    slot: 'Slot',
     sort: 'Sort',
     status: 'Status',
     summary: 'Summary',

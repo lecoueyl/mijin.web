@@ -147,7 +147,6 @@ export default {
   },
   tailwindcss: {
     configPath: '../tailwind.config.js',
-    jit: true,
     viewer: false,
   },
   /*

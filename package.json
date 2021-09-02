@@ -34,10 +34,9 @@
   ],
   "dependencies": {
     "highlight.js": "^10.7.2",
-    "mijin": "^1.5.2",
+    "mijin": "^1.6.0",
     "nuxt": "^2.15.8",
     "nuxt-i18n": "^6.27.3",
-    "tailwindcss": "^2.2.8",
     "vue-clipboard2": "^0.3.1"
   },
   "devDependencies": {

@@ -4,6 +4,7 @@ module.exports = {
   presets: [
     mijin,
   ],
+  mode: 'jit',
   darkMode: 'class',
   theme: {
     extend: {

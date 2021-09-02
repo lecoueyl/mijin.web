@@ -23,7 +23,16 @@
     </Sample>
 
     <Sample
-      :title="$t('props.size')"
+      :title="$t('props.slot')"
+      :snippet="samples.slot"
+    >
+      <MjAvatar>
+        <MjIcon name="calendar" />
+      </MjAvatar>
+    </Sample>
+
+    <Sample
+      :title="$t('props.placeholder')"
       :snippet="samples.size"
     >
       <div class="flex items-center space-x-4">
@@ -77,6 +86,11 @@ export default Vue.extend({
         ],
         letter: [
           '<MjAvatar letter="MJ" />',
+        ],
+        slot: [
+          `<MjAvatar>
+  <MjIcon name="calendar" />
+</MjAvatar>`,
         ],
         size: [
           `<MjAvatar

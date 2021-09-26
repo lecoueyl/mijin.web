@@ -52,6 +52,7 @@ module.exports = {
     dismissible: 'Dismissible',
     divided: 'Divided',
     expanded: 'Expanded',
+    extension: 'Extension',
     external: 'External',
     filled: 'Filled',
     fixed: 'Fixed',

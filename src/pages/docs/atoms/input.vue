@@ -101,6 +101,45 @@
     </Sample>
 
     <Sample
+      :title="$t('props.extension')"
+      :snippet="samples.extension"
+    >
+      <div class="space-y-4">
+        <MjInput
+          class="sm:w-1/2"
+          placeholder="example.com"
+        >
+          <template #prefix>
+            https://
+          </template>
+        </MjInput>
+
+        <MjInput
+          class="sm:w-1/2"
+          placeholder="example"
+        >
+          <template #suffix>
+            .com
+          </template>
+        </MjInput>
+
+        <MjInput
+          size="sm"
+          class="sm:w-1/2"
+          placeholder="example"
+        >
+          <template #prefix>
+            https://
+          </template>
+
+          <template #suffix>
+            .com
+          </template>
+        </MjInput>
+      </div>
+    </Sample>
+
+    <Sample
       :title="$t('common.events')"
       :snippet="samples.events"
     >
@@ -177,6 +216,30 @@ export default Vue.extend({
   placeholder="${this.$t('examples.input.placeholder')}"
   size="sm"
 />`,
+        ],
+        extension: [
+          `<MjInput placeholder="example.com">
+  <template #prefix>
+    https://
+  </template>
+</MjInput>`,
+          `<MjInput placeholder="example">
+  <template #suffix>
+    .com
+  </template>
+</MjInput>`,
+          `<MjInput
+  size="sm"
+  placeholder="example"
+>
+  <template #prefix>
+    https://
+  </template>
+
+  <template #suffix>
+    .com
+  </template>
+</MjInput>`,
         ],
         events: [
           `<MjInput

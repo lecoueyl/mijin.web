@@ -1,4 +1,5 @@
 const mijin = require('mijin/src/tailwind-preset');
+const { fontFamily } = require('tailwindcss/defaultTheme');
 
 module.exports = {
   presets: [
@@ -9,8 +10,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Inter', 'sans-serif'],
-        mono: ['IBM Plex Mono', 'monospace'],
+        sans: ['Inter', ...fontFamily.sans],
+        mono: ['IBM Plex Mono', ...fontFamily.mono],
       },
     },
   },

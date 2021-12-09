@@ -172,6 +172,12 @@ Vue.use(Mijin, {
         <MjTableRow
           v-for="option in [
             {
+              name: 'extendIcons',
+              description: $t('sections.general.customization.pluginOptions.extendIcons.description'),
+              type: 'Object',
+              default: '{}',
+            },
+            {
               name: 'prefix',
               description: $t('sections.general.customization.pluginOptions.prefix.description'),
               type: 'String',

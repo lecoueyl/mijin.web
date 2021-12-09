@@ -111,6 +111,9 @@ module.exports = {
         defaultPresets: 'Default Mijin presets',
         pluginOption: 'The plugin can be initialized with options. For example, to change the default prefix from {fromMj} to {toM}, load the plugin with the following option',
         pluginOptions: {
+          extendIcons: {
+            description: 'Extend component icons by passing an object name and SVG shapes',
+          },
           prefix: {
             description: 'Component name prefix',
           },

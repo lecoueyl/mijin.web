@@ -34,7 +34,7 @@
   ],
   "dependencies": {
     "highlight.js": "^10.7.2",
-    "mijin": "file:../mijin",
+    "mijin": "^1.8.0",
     "nuxt": "^2.15.8",
     "nuxt-i18n": "^6.27.3",
     "vue-clipboard2": "^0.3.3"

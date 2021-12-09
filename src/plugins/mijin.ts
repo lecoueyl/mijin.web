@@ -1,6 +1,6 @@
 /* eslint-disable max-len */
 import Vue from 'vue';
-import Mijin from 'mijin/src';
+import Mijin from 'mijin';
 
 Vue.use(Mijin, {
   extendIcons: {

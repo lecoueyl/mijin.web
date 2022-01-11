@@ -54,18 +54,24 @@
           >
             <template #terms>
               <MjLink
-                href="#"
+                class="inline-block"
                 color="gray"
+                href="#"
                 underline
-              >{{ $t('sections.organisms.form.termsOfUse') }}</MjLink>
+              >
+                {{ $t('sections.organisms.form.termsOfUse') }}
+              </MjLink>
             </template>
 
             <template #privacy>
               <MjLink
-                href="#"
+                class="inline-block"
                 color="gray"
+                href="#"
                 underline
-              >{{ $t('sections.organisms.form.privacy') }}</MjLink>
+              >
+                {{ $t('sections.organisms.form.privacy') }}
+              </MjLink>
             </template>
           </i18n>
         </MjCheckbox>

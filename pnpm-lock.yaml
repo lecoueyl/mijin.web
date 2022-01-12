@@ -17,7 +17,7 @@ specifiers:
   babel-core: ^7.0.0-bridge.0
   babel-eslint: ^10.1.0
   babel-jest: ^27.2.1
-  consola: '*'
+  consola: ^2.15.3
   eslint: ^7.32.0
   eslint-config-airbnb-base: ^14.2.1
   eslint-import-resolver-nuxt: ^1.0.1
@@ -26,7 +26,6 @@ specifiers:
   highlight.js: ^10.7.2
   jest: ^27.2.1
   mijin: ^1.8.0
-  npm-link-check: ^4.0.0
   nuxt: ^2.15.8
   nuxt-i18n: ^6.28.1
   postcss: ^8.3.7
@@ -36,12 +35,12 @@ specifiers:
   stylelint-order: ^4.1.0
   ts-jest: ^27.0.5
   typescript: ^4.5.4
-  vue: '>=2.0.0 <3.0.0'
+  vue: ^2.6.14
   vue-clipboard2: ^0.3.3
   vue-form: ^4.10.3
   vue-jest: ^3.0.7
-  vue-template-compiler: '>=2.0.0 <3.0.0'
-  webpack: '>=4.36.0 <5.0.0 || >=5.0.0 <6.0.0'
+  vue-template-compiler: ^2.6.14
+  webpack: ^4.46.0
 
 dependencies:
   highlight.js: 10.7.3
@@ -74,7 +73,6 @@ devDependencies:
   eslint-plugin-import: 2.25.4_eslint@7.32.0
   eslint-plugin-nuxt: 2.0.0_eslint@7.32.0
   jest: 27.4.7
-  npm-link-check: 4.0.0
   postcss: 8.4.5
   stylelint: 13.13.1
   stylelint-config-rational-order: 0.1.2
@@ -8690,13 +8688,6 @@ packages:
     resolution: {integrity: sha512-DlL+XwOy3NxAQ8xuC0okPgK46iuVNAK01YN7RueYBqqFeGsBjV9XmCAzAdgt+667bCl5kPh9EqKKDwnaPG1I7A==}
     engines: {node: '>=10'}
     dev: false
-
-  /npm-link-check/4.0.0:
-    resolution: {integrity: sha512-a4qdfcw0pEtQ2W4KQR8VIx3N1zde+0bD/Ysbu1Pa5si1v2bf16nUMtPfhcF6PFxjLSRlvwpnfQC6xR5wppikVQ==}
-    hasBin: true
-    dependencies:
-      glob: 7.2.0
-    dev: true
 
   /npm-run-path/4.0.1:
     resolution: {integrity: sha512-S48WzZW777zhNIrn7gxOlISNAqi9ZC/uQFnRdbeIHhZhCA6UqpkOT8T1G7BvfdgP4Er8gF4sUbaS0i7QvIfCWw==}

@@ -4,14 +4,13 @@
     "dev": "nuxt",
     "export": "nuxt export",
     "generate": "nuxt generate",
-    "link:check": "npm-link-check",
-    "link:local": "npm link mijin --no-save && sed -i \"\" \"s|'mijin'|'mijin/src'|\" src/plugins/mijin.ts",
-    "link:remove:local": "npm unlink mijin && npm install mijin --save && sed -i \"\" \"s|'mijin/src'|'mijin'|\" src/plugins/mijin.ts",
+    "link:local": "pnpm link ../mijin --no-save && sed -i \"\" \"s|'mijin'|'mijin/src'|\" src/plugins/mijin.ts",
+    "link:remove:local": "pnpm unlink mijin && pnpm install mijin --save && sed -i \"\" \"s|'mijin/src'|'mijin'|\" src/plugins/mijin.ts",
     "lint": "pnpm run lint:js && npm run lint:style",
     "lint:js": "eslint --ext .js,.vue --ignore-path .gitignore src",
     "lint:style": "stylelint **/*.{vue,css} --ignore-path .gitignore",
     "start": "nuxt start",
-    "test": "jest --passWithNoTests && npm run link:check"
+    "test": "jest --passWithNoTests"
   },
   "license": "MIT",
   "keywords": [
@@ -56,14 +55,13 @@
     "babel-core": "^7.0.0-bridge.0",
     "babel-eslint": "^10.1.0",
     "babel-jest": "^27.2.1",
-    "consola": "*",
+    "consola": "^2.15.3",
     "eslint": "^7.32.0",
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-import-resolver-nuxt": "^1.0.1",
     "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-nuxt": "^2.0.0",
     "jest": "^27.2.1",
-    "npm-link-check": "^4.0.0",
     "postcss": "^8.3.7",
     "stylelint": "^13.13.1",
     "stylelint-config-rational-order": "^0.1.2",
@@ -71,10 +69,10 @@
     "stylelint-order": "^4.1.0",
     "ts-jest": "^27.0.5",
     "typescript": "^4.5.4",
-    "vue": ">=2.0.0 <3.0.0",
+    "vue": "^2.6.14",
     "vue-form": "^4.10.3",
     "vue-jest": "^3.0.7",
-    "vue-template-compiler": ">=2.0.0 <3.0.0",
-    "webpack": ">=4.36.0 <5.0.0 || >=5.0.0 <6.0.0"
+    "vue-template-compiler": "^2.6.14",
+    "webpack": "^4.46.0"
   }
 }

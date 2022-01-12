@@ -8,13 +8,13 @@
 git clone https://github.com/lecoueyl/mijin.web.git
 
 # install dependencies
-npm install
+pnpm install
 
 # serve with hot reload at localhost:3000
-npm run dev
+pnpm run dev
 
 # generate static project
-npm run generate
+pnpm run generate
 ```
 
 For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
@@ -31,20 +31,15 @@ git clone https://github.com/lecoueyl/mijin.git
 git clone https://github.com/lecoueyl/mijin.web.git
 ```
 
-2. Use NPM link to use the local package repository for development
+2. Use link to use the local package repository for development
 
 ```bash
-# create a global symlink of the local mijin package
-cd mijin
-npm link
-
 # use the local mijin package instead of the one in registry
-cd ../mijin.web
-npm run link:mijin
+pnpm run link:mijin
 ```
 
-3. Remove the NPM link before releasing the changes
+3. Remove the link before releasing the changes
 
 ```bash
-npm run link:remove:mijin
+pnpm run link:mijin:remove
 ```
